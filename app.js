@@ -35,17 +35,6 @@ class camper {
     }
 }
 
-let nueCam1 = new camper("1007788706", "Alejandro", "3222039907", "diego_palacio5@hotmail.com", "R4", 0);
-let nueCam2 = new camper("2007788705", "David", "3112277265", "david_palacio5@hotmail.com", "R4", 0);
-let nueCam3 = new camper("37788703", "Ingrid", "80539155", "ingrid_palacio5@hotmail.com", "R4", 0);
-let nueCam4 = new camper("8007788702", "Alejo", "35417060", "alejo_palacio5@hotmail.com", "R4", 0);
-let nueCam5 = new camper("9000007788701", "Camila", "1007788706", "camila_palacio5@hotmail.com", "R4",0);
-campers.push(nueCam1);
-campers.push(nueCam2);
-campers.push(nueCam3);
-campers.push(nueCam4);
-campers.push(nueCam5);
-
 obtenerCampersGuardados();
 
 function obtenerCampersGuardados() {
@@ -228,16 +217,6 @@ class concepto {
     }
 }
 
-let nueCon1 = new concepto(1, "Llegar temprano", 10);
-let nueCon2 = new concepto(2, "Llegar tarde", -10);
-let nueCon3 = new concepto(3, "Asistir a todas las clases", 20);
-let nueCon4 = new concepto(4, "No asistir a todas las clases", -20);
-let nueCon5 = new concepto(5, "Ser respetuoso en todo momento", 30);
-conceptos.push(nueCon1);
-conceptos.push(nueCon2);
-conceptos.push(nueCon3);
-conceptos.push(nueCon4);
-conceptos.push(nueCon5);
 
 obtenerConceptosGuardados();
 
