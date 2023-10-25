@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="img/favicon.png"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Gestión Clientes</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logoInicio">
+            <h1 class="titulo">Campcoins</h1>
+        </a>
+    </nav>
+    <div class="campers">
+        <div class="herraBusq">
+            <label for="aBuscarCam">Buscar camper</label>
+            <input type="text" placeholder="Nombre o documento" id="aBuscarCam"><br>
+        </div>
+        <div class="listCampers">
+            <br>
+            <h1 class="titulo">Gestión de campers</h1><hr>
+            <br><a href="#openModal"><button class="registrar">Registrar nuevo camper</button></a><br><br>
+            <div id="openModal" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <div>
+                    <h1 class="tituloModal">Registrar camper</h1><hr>
+                </div>
+                    <form id="formularioAñadirCam">
+                        <div class="espForm">
+                            <label for="nueDoc">Numero de documento: </label>
+                            <input type="number" id="nueDoc"><br>
+                        </div>
+                        <div class="espForm">
+                            <label for="nueNom">Nombre: </label>
+                            <input type="text" id="nueNom"><br>
+                        </div>
+                        <div class="espForm">
+                            <label for="nueTel">Telefono: </label>
+                            <input type="number" id="nueTel"><br>
+                        </div>
+                        <div class="espForm">
+                            <label for="nueCor">Correo electronico: </label>
+                            <input type="email" id="nueCor"><br>
+                        </div>
+                        <div class="espForm">
+                            <label for="nueGru">Grupo: </label>
+                            <input type="text" id="nueGru"><br>
+                        </div>
+                        <div class="espForm">
+                            <label for="nueCoins">Compcoins actuales: </label>
+                            <input type="number" id="nueCoins">
+                        </div>
+                    </form>
+                    <a><button id="botAñadirCam" onclick="registrarCamper()">Enviar</button></a>
+                </div>
+            </div>
+            <ul id="listCampers"></ul>
+        </div>
+    </div>
+    <div class="conceptos">
+        <div class="herraBusq">
+            <label for="aBuscarCon">Buscar concepto</label>
+            <input type="text" placeholder="Ingrese una descripción" id="aBuscarCon"><br>
+        </div>
+        <div class="listConceptos">
+            <br>
+            <h1 class="titulo">Gestión de conceptos</h1><hr>
+            <br><a href="#openModalCon"><button class="registrar">Registrar nuevo concepto</button></a><br>
+            <div id="openModalCon" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h1 class="tituloModal">Registrar concepto</h1><hr>
+                    <form id="formularioAñadirCon">
+                        <div class="espForm">
+                            <label for="nueID">ID: </label>
+                            <input type="number" id="nueID"><br>
+                        </div>
+                        <div class="espForm">
+                            <label for="nueDes">Descripción: </label>
+                            <input type="text" id="nueDes"><br>
+                        </div>
+                        <div class="espForm">
+                            <label for="nueVal">Valor en campcoins: </label>
+                            <input type="number" id="nueVal"><br>
+                        </div>
+                    </form>
+                    <a><button id="botAñadirConcepto" onclick="registrarConcepto()">Enviar</button></a>
+                </div>
+            </div>
+            <ul id="listConceptos"></ul>
+        </div>
+    </div>
+    <div class="contenido">
+        <br>
+        <h1 class="titulo">Asignación de campcoins</h1><br><hr>
+        <div class="listas">
+            <div class="campersAsg">
+                <h2 class="subTitulo">Lista de campers</h2>
+                <ul id="listCampersAsg"></ul>
+            </div>
+            <div class="conceptosAsg">
+                <h2 class="subTitulo">Lista de conceptos</h2>
+                <ul id="listConceptosAsg"></ul>
+            </div>
+        </div>
+        <a href="#openModalCompletado"><button id="botonAsignar" class="asignar">Asignar</button></a>
+        <div id="modalCompletado"></div>
+    </div>
+    <div class="campcoins">
+        <br><h1 class="titulo">Reporte de campcoins</h1><br><hr><br>
+        <ul id="listaCampcoins"></ul><br>
+    </div>
+    <footer>
+        <h2>Desarrolado por: Alejandro Palacio Herrera</h2>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

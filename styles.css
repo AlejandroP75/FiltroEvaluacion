@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Coming+Soon&display=swap');
+
+body{
+	margin: 0;
+}
+
+hr{
+	width: 90%;
+}
+
+nav{
+	background-color: #0F1C70;
+	display: flex;
+	color: white;
+	justify-content: center;
+	align-items: center;
+}
+
+.logoInicio{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+
+nav .titulo{
+	color: white;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: lighter;
+	font-size: 55px;
+	margin: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo{
+	color: #0F1C70;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: lighter;
+	font-size: 55px;
+	margin: 0;
+}
+
+ul{
+	display: flex;
+
+}
+
+.navv{
+	color: #FFFFFF;
+	text-decoration: none;
+	list-style: none;
+	margin-right: 50px;
+	font-family: Coming Soon;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.navv:hover{
+	color: #BD1212;
+}
+
+.campers, .conceptos{
+	display: flex;
+	background-color: #606061;
+	color: white;
+	min-height: 441px;
+    border-bottom: #FFFFFF 2px solid;
+}
+
+.herraBusq{
+	width:10%;
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	font-family: Coming Soon;
+	font-weight: bold;
+}
+
+#aBuscarCam, #aBuscarCon{
+	font-family: Coming Soon;
+	font-weight: bold;
+	border-radius: 20px;
+	padding: 5px;
+}
+
+.listCampers, .listConceptos{
+	background-color: #e9e3e6;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.registrar{
+	width: 100%;
+	font-size: larger;
+	border-radius: 20px;
+	padding: 15px;
+	font-family: Coming Soon;
+	font-weight: bold;
+	padding-left: 650px;
+	padding-right: 650px;
+}
+
+.registrar:hover{
+	background-color: #BD1212;
+	color: white;
+}
+
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 550px;
+	position: relative;
+	margin: 10% auto;
+	padding: 20px;
+	background-color: #0F1C70;
+	color: white;
+	border-radius: 20px;
+}
+
+.tituloModal{
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: lighter;
+	font-size: 40px;
+}
+
+.espForm {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: Coming Soon;
+	font-weight: bold;
+}
+
+.espForm label {
+	flex: 1;
+	margin-right: 10px;
+}
+
+.espForm input {
+	flex: 2;
+}
+
+.resaltar{
+    color: red;
+    font-size: larger;
+}
+
+#nueDoc, #nueNom, #nueTel, #nueCor, #nueGru, #nueCoins, #modDoc, #modNom, #modTel, #modCor, #modGru, #modCoins, #nueID, #nueDes, #nueVal{
+	border-radius: 10px;
+	padding: 10px;
+	margin: 5px;
+	font-family: Coming Soon;
+	font-weight: bold;
+	text-align: center;
+}
+
+#botAñadirCam, #botAñadirConcepto{
+	font-family: Coming Soon;
+	font-weight: bold;
+	border-radius: 5px;
+	width: 100%;
+	margin-top: 10px;
+	font-size: larger;
+}
+
+#botAñadirCli:hover, #botAñadirCon:hover{
+	background-color: red;
+	color: white;
+}
+
+.close {
+	background-color: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	top: -10px;
+	text-align: center;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 100%;
+}
+.close:hover { 
+	background-color: white;
+	color: #606061;
+}
+
+.contCamper, .contConcepto{
+	font-family: Coming Soon;
+	color: #0F1C70;
+	list-style: none;
+	border: #FFFFFF 2px solid;
+	width: 1500px;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 20px;
+	align-items: center;
+	font-size: 17px;
+	border-radius: 5px;
+}
+
+.contCamper button, .contConcepto button{
+	font-family: Coming Soon;
+	font-weight: bold;
+	margin-left: 5px;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.contCamper button:hover, .contConcepto button:hover{
+	background-color: #BD1212;
+	color: #FFFFFF;
+}
+
+#botModificarCam, #botModificarCon{
+	font-family: Coming Soon;
+	font-weight: bold;
+	border-radius: 5px;
+	width: 100%;
+	margin-top: 10px;
+	font-size: larger;
+}
+
+#botModificarCam:hover, #botModificarCon{
+	background-color: red;
+	color: white;
+}
+
+footer{
+	background-color: #0F1C70;
+	width: 100%;
+	display: flex;
+	color: white;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	font-family: Coming Soon;
+	font-weight: bold;
+}
+
+
+body{
+	margin: 0;
+}
+
+hr{
+	width: 90%;
+}
+
+nav{
+	background-color: #0F1C70;
+	display: flex;
+	color: white;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logoInicio{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+
+.logo{
+	width: 100px;
+	margin: 10px;
+}
+
+nav .titulo{
+	color: white;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: lighter;
+	font-size: 55px;
+	margin: 0;
+}
+
+.titulo{
+	color: #0F1C70;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: lighter;
+	font-size: 55px;
+	margin: 0;
+}
+
+ul{
+	display: flex;
+
+}
+
+.navv{
+	color: #FFFFFF;
+	text-decoration: none;
+	list-style: none;
+	margin-right: 50px;
+	font-family: Coming Soon;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.navv:hover{
+	color: #BD1212;
+}
+
+.imgPrincipal{
+	width: 100%;
+	height: 400px;
+	display: block;
+}
+
+.contenido{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #e9e3e6;
+}
+
+.listas{
+	display: flex;
+	width: 100%;
+}
+
+.campersAsg{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.conceptosAsg{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#listConceptosAsg{
+	width: 500px;
+	display: flex;
+	justify-content: center;
+}
+
+.subTitulo{
+	color: #0F1C70;
+	font-family: Coming Soon;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+.contCamperAsg{
+	font-family: Coming Soon;
+	color: #0F1C70;
+	list-style: none;
+	border: #FFFFFF 2px solid;
+	width: 800px;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 20px;
+	align-items: center;
+	font-size: 17px;
+	border-radius: 5px;
+}
+
+.contCamperAsg button{
+	font-family: Coming Soon;
+	font-weight: bold;
+	margin-left: 5px;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.contClienteCamperAsg button:hover{
+	background-color: #BD1212;
+	color: #FFFFFF;
+}
+
+.contConceptoAsg{
+	font-family: Coming Soon;
+	color: #0F1C70;
+	list-style: none;
+	border: #FFFFFF 2px solid;
+	width: 800px;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 20px;
+	align-items: center;
+	font-size: 17px;
+	border-radius: 5px;
+}
+
+.contConceptoAsg button{
+	font-family: Coming Soon;
+	font-weight: bold;
+	margin-left: 5px;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.contConceptoAsg button:hover{
+	background-color: #BD1212;
+	color: #FFFFFF;
+}
+
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 550px;
+	position: relative;
+	margin: 10% auto;
+	padding: 20px;
+	background-color: #0F1C70;
+	color: white;
+	border-radius: 20px;
+}
+
+.tituloModal{
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: lighter;
+	font-size: 40px;
+}
+
+.espForm {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: Coming Soon;
+	font-weight: bold;
+}
+
+.espForm label {
+	flex: 1;
+	margin-right: 10px;
+}
+
+.espForm input {
+	flex: 2;
+}
+.close {
+	background-color: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	top: -10px;
+	text-align: center;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 100%;
+}
+.close:hover { 
+	background-color: white;
+	color: #606061;
+}
+
+.asignar{
+	width: 100%;
+	font-size: larger;
+	border-radius: 20px;
+	padding: 15px;
+	font-family: Coming Soon;
+	font-weight: bold;
+	padding-left: 650px;
+	padding-right: 650px;
+	margin: 20px;
+}
+
+.asignar:hover{
+	background-color: #BD1212;
+	color: white;
+}
+
+.campcoins{
+    background-color: #e9e3e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#listaCampcoins{
+    margin: 0;
+}
+
+.contCampcoins{
+	font-family: Coming Soon;
+	color: #0F1C70;
+	list-style: none;
+	border: #FFFFFF 2px solid;
+	width: 1500px;
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 20px;
+	align-items: center;
+	font-size: 17px;
+	border-radius: 5px;
+}
+
+.contCampcoins button{
+	font-family: Coming Soon;
+	font-weight: bold;
+	margin-left: 5px;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.contCampcoins button:hover{
+	background-color: #BD1212;
+	color: #FFFFFF;
+}
+
+footer{
+	background-color: #0F1C70;
+	width: 100%;
+	display: flex;
+	color: white;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	font-family: Coming Soon;
+	font-weight: bold;
+}
